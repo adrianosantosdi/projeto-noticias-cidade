@@ -5,16 +5,209 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #fff url('../img/');
+    font-family: "Roboto", sans-serif;
+    background: #fff url('../img/fundo.png') repeat-x;
+    position: relative;
+}
+
+a {
+    color: #69001D;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+.container {
+    width: 850px;
+    margin: 0 auto;
 }
 
 .header {
-    background: url('../img/fundo.png');
-    display: flex;
-    justify-content: space-around;
+    height: 150px;
+    background: url('../img/detalhe-topo.png') no-repeat ;
+    background-position: 100%;
+    padding-top: 25px;   
 }
 
 .header__img {
-    width: 200px;
+    width: 152px;
+    height: 66px;
 }
+
+.header__navegacao {
+    width: 100%;
+}
+
+.header__navegacao ul {
+    margin-right: 90px;
+    display: flex;
+    list-style: none;
+    background-color: #b10333;
+    margin-top: 25px;
+}
+
+
+.header__navegacao a {
+    font-size: 0.9rem;
+    padding: 0.5rem 1.5rem;
+    display: block;
+    text-decoration: none;
+    line-height: 2.1rem;
+    color: #FFF;
+    background: url('../img/divisor.png') no-repeat left center;
+}
+
+.header__navegacao a:hover {
+    color: #69001D;
+}
+
+.principal {
+    background-color: #b10333;
+    width: 90%;
+    margin: 0 auto;
+    background: url('../img/fundo-caixa.png');
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.entrevistas {
+    width: 30%;
+}
+
+.entrevistas h2 {
+    width: 40%;
+    background-color: rgb(72, 72, 250);
+    text-align: left;
+    padding: 10px;
+    color: #FFF;
+}
+
+.entrevistas p {
+    line-height: 2;
+    padding-left: 5px;
+}
+
+.entrevistas label {
+    display: block;
+    padding: 5px 0 5px 5px;
+}
+
+.entrevistas input[type="email"] {
+    width: 150px;
+    height: 30px;
+    padding: 5px 0 5px 5px;
+    display: block;
+}
+
+.entrevistas button {
+    display: block;
+    margin-top: 5px;
+    width: 100px;
+    height: 30px;
+    background-color: #69001D;
+    color: #FFF;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    padding: 5px 0 5px 5px;
+}
+
+.entrevistas button:focus {
+    outline-color: #130b0d;
+}
+
+.ultima-entrevista  {
+    background-color: rgb(72, 72, 250);
+    width: 30%;
+    height: 0;
+    margin-right: 300px;
+    background-color: #130b0d;
+}
+
+.ultima-entrevista h2 {
+    background-color: rgb(72, 72, 250);
+    text-align: left;
+    padding: 10px;
+    color: #FFF;
+}
+
+.ultima-entrevista h3 {
+    background-color: #b10333;
+    margin-top: 20px;
+    padding: 5px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.ultima-entrevista img {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.ultima-entrevista p {
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+.destaque {    
+    width: 30%;
+    height: 0px;
+}
+
+.destaque h2 {
+    background-color: rgb(72, 72, 250);
+    text-align: left;
+    padding: 10px;
+    color: #FFF;
+}
+
+.destaque h3 {
+    background-color: #b10333;
+    margin-top: 20px;
+    padding: 5px;
+    color: #FFF;
+    text-transform: uppercase;
+    font-size: 1rem; 
+}
+
+.destaque img {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.destaque p {
+    margin-top: 5px;
+    line-height: 1.5;
+}
+
+.mundo img {
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+.mundo {
+    display: flex;
+    gap: 10px;
+}
+
+.mundo p {
+    display: block;
+}
+
+.rodape {
+    background-color: rgb(72, 72, 250);
+    width: 100%;
+    padding: 30px;
+    position: absolute;
+    top: 1150px;
+}
+
+.rodape p {
+    text-align: center;
+    color: #FFF;
+    font-size: 1.5rem;
+}
+
